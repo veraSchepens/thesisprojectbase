@@ -36,7 +36,7 @@ const generateResponse = (incomingChatLi) => {
             "messages": [
                 {
                     role: "user",
-                    content: "Beantwoord dit in maximaal 100 woorden" + userMessage
+                    content: "Beantwoord dit in maximaal 200 woorden" + userMessage
                 }
             ],
         })
@@ -123,8 +123,8 @@ function blink() {
   const originalSrc = image.src;
 
   setTimeout(() => image.src = "Assets/eyes_half_closed.png", 10);
-  setTimeout(() => image.src = "Assets/eyes_closed.png", 80);
-  setTimeout(() => image.src = "Assets/eyes_half_closed.png", 160);
+  setTimeout(() => image.src = "Assets/eyes_closed.png", 20);
+  setTimeout(() => image.src = "Assets/eyes_half_closed.png", 80);
   setTimeout(() => image.src = originalSrc, 240);
 }
 
