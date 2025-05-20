@@ -1,0 +1,6 @@
+{
+  "appId": "com.thesis_project.app",
+  "appName": "thesis_project",
+  "webDir": "web",
+  "bundleWebRuntime": false
+}

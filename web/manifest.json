@@ -1,0 +1,15 @@
+{
+  "name": "Mijn Website",
+  "short_name": "Website",
+  "start_url": "/thesisproject/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "./Assets/eyes_closed.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

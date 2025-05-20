@@ -1,0 +1,162 @@
+html,body {
+    margin: 0;
+    padding-bottom: 10px;
+    height: 100lvh;
+    overflow: hidden;
+    align-items: center;
+}
+  
+.background-image {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 100%;
+    height:100%;
+    transform:translate(-50%,-50%);
+    z-index: 1;
+  }
+
+#displayed-image {
+  position: absolute;
+  top: -35%;
+  left: -23.5%;
+  width: 1175px;
+  object-fit: cover;
+  z-index:3;
+  align-self: center;
+ }
+
+
+
+.chatbox li {
+  margin-bottom: 10px;
+  }
+
+.chat p {
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 100vw;
+  max-height: 50vh;
+  font-size: 20px;
+  word-wrap: break-word;
+  white-space: normal;
+  overflow-wrap: break-word;
+  }
+
+.chat-outgoing p {
+  background-color: #162887;
+  align-self: flex-end;
+  color: #fff;
+  }
+
+.chat-incoming p {
+  background-color: #eaeaea;
+  max-width: 80vw;
+  text-align: center;
+  align-self: flex-start;
+  margin-left: 120px;
+  margin-right: auto;
+  border-radius: 10px;
+  }
+
+.chat-input {
+  position: fixed;
+  top: 70%;
+  left: 30%;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-50%);
+  z-index:4;
+  }
+
+.chat-input textarea {
+  width: 60vw;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  resize: none;
+  outline: none;
+  overflow-y: scroll;
+  background-color: #dcdcdc85;
+  font-size: 15px;
+  color: green;
+  font-weight: 600;
+  margin-top: -10px;
+  margin-left: -15px;
+  height: 10vh;
+  margin: 0;
+  resize:none;
+  }
+
+#cross {
+  float: right;
+  position: relative;
+  top: -38px;
+  left: -30%;
+  cursor: pointer;
+  color: white;
+  font-weight: bolder;
+  font-size: 25px;
+  }
+
+#cross:hover {
+  color: red;
+  transition: all .5s;
+  }
+
+.chatbox .chat p.error {
+  color: #ffffff;
+  background-color: #ff3737e8;
+  }
+
+#sendBTN {
+  width: 60vw;
+  padding: 10px;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 7px;
+  background-color: #2F8D46;
+  cursor: pointer;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  }
+
+@media (min-width: 600px) and (max-width: 1024px) {
+
+  body{
+    background-color: lightcoral;
+    overflow-y: auto;
+  }
+
+  .chat-input {
+    bottom: 0;
+    width: 80vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .chat-input textarea {
+    width: 80vw;
+    font-size: 16px;
+    align-self: center;
+  }
+
+  #sendBTN {
+    width: 70vw;
+    align-self: center;
+  }
+
+  #displayed-image {
+    position:fixed;
+    width: device-width;
+    top: -35%;
+    left: -23%;
+    transform: none;
+  }
+}
